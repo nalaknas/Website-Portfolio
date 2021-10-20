@@ -11,14 +11,14 @@
 }
 section
 {
-	padding: 100px;
+	padding: 60px;
 
 }
 .banner
 {
 	position: relative;
 	min-height: 100vh;
-	background: url(banner.jpg);
+	background: url(./images/banner.jpg);
 	background-size: cover;
 	background-position: right;
 	display: flex;
@@ -253,6 +253,13 @@ img
 
 
 }
+/* 
+
+
+
+
+ */
+
 .testimonial
 {
 
@@ -262,18 +269,36 @@ img
 .testimonial .content
 {
 
-	display: inline-flex;
-    justify-content: space-evenly;
-    flex-wrap: inherit;
+	/* display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: inherit; */
+
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	flex-direction: row;
+
 
 }
 .testimonial .content .textimonialBox
 {
 
-	max-width: 50%;
-	padding: 60px 40px;
+	/* max-width: 50%;
+	padding: 40px 20px;
 	margin: 20px;
 	background: #2196f3;
+	text-align: center;
+    transition: 0.5s; */
+	/* max-width: 40%; */
+
+	padding: 40px 20px;
+	background: #2196f3;
+	color: #fff;
+	/* max-width: 400px; */
+	min-width: 40%;
+	margin: 20px;
+	text-align: center;
+	transition: 0.5s;
 
 }
 .testimonial .content .textimonialBox p
@@ -304,6 +329,26 @@ img
 	font-weight: 400;
 
 }
+.testimonial .content .textimonialBox a
+{
+
+	margin-top: 40px;
+	text-align:end;
+	color: #fff;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 1em;
+
+} 
+
+/* 
+
+
+
+
+
+ */
+
 .contact
 {
 
@@ -472,7 +517,7 @@ img
 
 		width: 40px;
 		height: 40px;
-		background: url(menu.png);
+		background: url(./images/menu.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 30px;
@@ -482,7 +527,7 @@ img
 	.toggle.active
 	{
 
-		background: url(close.png);
+		background: url(./images/close.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 25px;
